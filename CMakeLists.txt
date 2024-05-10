@@ -15,4 +15,3 @@ add_executable(Encoder Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.
 add_executable(Decoder Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.h GetRandom.cpp GetRandom.h Dependencies/EnciphPart/EncodePart/Encoder.cpp Dependencies/EnciphPart/EncodePart/Encoder.h Dependencies/EnciphPart/DecodePart/Decoder.cpp Dependencies/EnciphPart/DecodePart/Decoder.h Program/DecodeProgram/DecodeProgram.cpp Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.cpp Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.h Dependencies/Converters/CasesConverter/Converter/CasesConverter.cpp Dependencies/Converters/CasesConverter/Converter/CasesConverter.h
         Dependencies/Tools/InString.h
         Dependencies/Tools/InString.cpp)
-add_executable(Knight Knight/Knight.cpp)
