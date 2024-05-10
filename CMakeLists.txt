@@ -3,9 +3,6 @@ project(EasyEncipher)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(EasyEncipher main.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.h GetRandom.cpp GetRandom.h Dependencies/EnciphPart/EncodePart/Encoder.cpp Dependencies/EnciphPart/EncodePart/Encoder.h Dependencies/EnciphPart/DecodePart/Decoder.cpp Dependencies/EnciphPart/DecodePart/Decoder.h
-        Dependencies/Tools/InString.h
-        Dependencies/Tools/InString.cpp)
 add_executable(GetSecretKey Program/GetSecretKey/GetSecretKey.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.h
         Dependencies/Tools/InString.h
         Dependencies/Tools/InString.cpp)
