@@ -5,8 +5,10 @@
 #include "GetRandom.h"
 #ifdef WIN32
 #include <Windows.h>
+#include <random>
+
 #endif
-#include <bits/stdc++.h>
+
 using namespace std;
 int GetRandom::returnRandom(int fr,int to) {
     int min = fr,max = to;
