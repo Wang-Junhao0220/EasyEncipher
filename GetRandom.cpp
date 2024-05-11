@@ -6,7 +6,8 @@
 #ifdef WIN32
 #include <Windows.h>
 #endif
-#include <bits/stdc++.h>
+#include <iostream>
+#include <random>
 using namespace std;
 int GetRandom::returnRandom(int fr,int to) {
     int min = fr,max = to;
