@@ -1,7 +1,7 @@
 //
 // Created by Laptop on 2023/11/10.
 //
-#include <bits/stdc++.h>
+#include <iostream>
 #include "../../Dependencies/EnciphPart/EncodePart/Encoder.h"
 #include "../../Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.h"
 #include "../../Dependencies/Converters/CasesConverter/Converter/CasesConverter.h"

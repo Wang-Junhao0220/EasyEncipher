@@ -4,12 +4,12 @@
 
 #ifndef EASYENCIPHER_CASESRECORDER_H
 #define EASYENCIPHER_CASESRECORDER_H
-#include <bits/stdc++.h>
+#include <string>
 using namespace std;
 
 class CasesRecorder {
 public:
-    string returnCases(const string&);
+    static string returnCases(const string&);
 };
 
 

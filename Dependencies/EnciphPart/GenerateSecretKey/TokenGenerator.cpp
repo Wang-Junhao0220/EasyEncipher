@@ -2,9 +2,12 @@
 // Created by Laptop on 2023/11/8.
 //
 #include "TokenGenerator.h"
-#include <bits/stdc++.h>
-
+#include <iostream>
+#include <fstream>
+#include <string>
 #include <random>
+#include <algorithm>
+
 using namespace std;
 string TokenGenerator::returnToken() {
     fstream f;

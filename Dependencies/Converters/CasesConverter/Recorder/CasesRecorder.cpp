@@ -3,7 +3,6 @@
 //
 
 #include "CasesRecorder.h"
-#include <bits/stdc++.h>
 using namespace std;
 string CasesRecorder::returnCases(const string &original) {
     //DONE

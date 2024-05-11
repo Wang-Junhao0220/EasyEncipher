@@ -4,7 +4,6 @@
 
 #include "Decoder.h"
 #include "../../Tools/InString.h"
-#include <bits/stdc++.h>
 
 using namespace std;
 int pass_index[26];

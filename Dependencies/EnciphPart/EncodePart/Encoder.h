@@ -8,7 +8,7 @@
 
 class Encoder {
 public:
-    std::string Encode(std::string,std::string);
+    static std::string Encode(std::string,std::string);
 };
 
 

@@ -4,7 +4,7 @@
 
 #ifndef EASYENCIPHER_TOKENGENERATOR_H
 #define EASYENCIPHER_TOKENGENERATOR_H
-#include <bits/stdc++.h>
+#include <string>
 using namespace std;
 
 

@@ -4,13 +4,13 @@
 
 #ifndef EASYENCIPHER_CASESCONVERTER_H
 #define EASYENCIPHER_CASESCONVERTER_H
-#include <bits/stdc++.h>
+#include <string>
 using namespace std;
 
 class CasesConverter {
 public:
-    string All_to_high(const string&,const string&);
-    string To_ori(const string&,const string&);
+    static string All_to_high(const string&,const string&);
+    static string To_ori(const string&,const string&);
 };
 
 

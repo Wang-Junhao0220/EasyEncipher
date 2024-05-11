@@ -1,7 +1,7 @@
 //
 // Created by Laptop on 2023/11/10.
 //
-#include <bits/stdc++.h>
+#include <iostream>
 #include "../../Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.h"
 using namespace std;
 string SecretKey;

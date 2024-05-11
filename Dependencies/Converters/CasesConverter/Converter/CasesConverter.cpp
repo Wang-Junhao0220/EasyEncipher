@@ -3,7 +3,6 @@
 //
 
 #include "CasesConverter.h"
-#include <bits/stdc++.h>
 #define ull unsigned long long
 using namespace std;
 string CasesConverter::All_to_high(const string &ori,const string &record) {
@@ -21,7 +20,9 @@ string CasesConverter::All_to_high(const string &ori,const string &record) {
     }
     return higher;
 }
-string CasesConverter::To_ori(const string &all_high, const string &record) {
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cppcoreguidelines-narrowing-conversions"
+string CasesConverter::To_ori(const string& all_high, const string &record) {
     string normal=all_high;
     ull ssize=normal.size();
     for(ull i=0;i<ssize;i++) {
@@ -35,3 +36,4 @@ string CasesConverter::To_ori(const string &all_high, const string &record) {
     }
     return normal;
 }
+#pragma clang diagnostic pop

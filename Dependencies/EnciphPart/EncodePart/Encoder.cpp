@@ -4,7 +4,6 @@
 
 #include "Encoder.h"
 #include "../../Tools/InString.h"
-#include <bits/stdc++.h>
 
 using namespace std;
 string Encoder::Encode(string ori,string key) {

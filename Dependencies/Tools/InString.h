@@ -4,7 +4,7 @@
 
 #ifndef EASYENCIPHER_INSTRING_H
 #define EASYENCIPHER_INSTRING_H
-#include<bits/stdc++.h>
+#include<string>
 
 class InString {
 public:
