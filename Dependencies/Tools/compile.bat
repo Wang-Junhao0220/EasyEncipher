@@ -1,4 +1,5 @@
-cd C:\Programming\Cpp\EasyEncipher
+echo ~Dependencies\Tools\compile.bat
+cd ..\..
 echo Compile the GetSecretKey
 g++ -o GetSecretKey Program/GetSecretKey/GetSecretKey.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.h Dependencies/Tools/InString.h Dependencies/Tools/InString.cpp
 echo Compile the Encoder
