@@ -5,8 +5,6 @@
 #include "GetRandom.h"
 #ifdef WIN32
 #include <Windows.h>
-
-
 #endif
 #include <random>
 using namespace std;

@@ -2,7 +2,8 @@
 // Created by Laptop on 2023/11/10.
 //
 #include <iostream>
-#include "../../Dependencies/EnciphPart/GenerateSecretKey/TokenGenerator.h"
+#include "../../Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h"
+#include "../../Dependencies/Tools/PauseProgram.h"
 using namespace std;
 string SecretKey;
 
@@ -11,8 +12,6 @@ int main() {
     SecretKey = mainToken->returnToken();
     cout << "Your secret key: \n" << SecretKey << endl;
     cout << "Don't forget it! If so, you will lose your text!" << endl;
-#ifdef WIN32
-    system("pause");
-#endif
+    PauseProgram::press_key();
     return 0;
 }
