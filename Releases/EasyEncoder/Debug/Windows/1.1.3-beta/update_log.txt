@@ -1,0 +1,2 @@
+添加“Press any key to continue...”的Linux平台支持
+修复了一些已知的问题
