@@ -12,5 +12,5 @@ public:
     static std::string Decode(std::string&,std::string);
 };
 
-
+// test
 #endif //EASYENCIPHER_DECODER_H

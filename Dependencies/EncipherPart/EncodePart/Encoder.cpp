@@ -22,7 +22,7 @@ string Encoder::Encode(string ori,string key) {
             password[i]=ori[i];
         }
     }
-    cout<<"Alphabet\n Token: \n Vice Token: \n"<<"ABCDEFGHIJKLMNOPQRSTUVWXYZ\n"<<key<<endl<<ViceTokenGenerator::returnViceToken(key)<<endl;
+    // cout<<"Alphabet\n Token: \n Vice Token: \n"<<"ABCDEFGHIJKLMNOPQRSTUVWXYZ\n"<<key<<endl<<ViceTokenGenerator::returnViceToken(key)<<endl;
     secondEncoder->secondEncode(password,ViceTokenGenerator::returnViceToken(key));
     return password;
 }
