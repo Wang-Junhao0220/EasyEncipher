@@ -3,7 +3,12 @@
 //
 
 #include "Decoder.h"
+
+
+#include "SecondDecode.h"
 #include "../../Tools/InString.h"
+#include "../GenerateSecretKey/ViceTokenGenerator.h"
+
 
 using namespace std;
 int pass_index[26];
@@ -16,7 +21,9 @@ void getIndex(string Key) {
         }
     }
 }
-string Decoder::Decode(const string& password,string key) {
+string Decoder::Decode(string& password,string key) {
+    auto *secondDecoder=new SecondDecode();
+    secondDecoder->secondDecode(password,ViceTokenGenerator::returnViceToken(key));
     const string alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     getIndex(std::move(key));
     string ori;

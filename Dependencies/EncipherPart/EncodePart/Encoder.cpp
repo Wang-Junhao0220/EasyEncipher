@@ -3,12 +3,16 @@
 //
 
 #include "Encoder.h"
+
+#include "SecondEncode.h"
 #include "../../Tools/InString.h"
+#include "../GenerateSecretKey/ViceTokenGenerator.h"
 
 using namespace std;
 string Encoder::Encode(string ori,string key) {
     const string alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     string password=ori;
+    auto *secondEncoder=new SecondEncode();
     unsigned long long ori_size=ori.size();
     for(unsigned long long i=0;i<ori_size;i++) {
         if(InString::inString(alphabet,ori[i])) {
@@ -18,5 +22,7 @@ string Encoder::Encode(string ori,string key) {
             password[i]=ori[i];
         }
     }
+    cout<<"Alphabet\n Token: \n Vice Token: \n"<<"ABCDEFGHIJKLMNOPQRSTUVWXYZ\n"<<key<<endl<<ViceTokenGenerator::returnViceToken(key)<<endl;
+    secondEncoder->secondEncode(password,ViceTokenGenerator::returnViceToken(key));
     return password;
 }

@@ -8,22 +8,53 @@ add_executable(GetSecretKey Program/GetSecretKey/GetSecretKey.cpp
         Dependencies/Tools/InString.h
         Dependencies/Tools/InString.cpp
         Dependencies/Tools/PauseProgram.cpp
-        Dependencies/Tools/PauseProgram.h)
-add_executable(Encoder Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
-        Dependencies/EncipherPart/EncodePart/Encoder.cpp Dependencies/EncipherPart/EncodePart/Encoder.h
+        Dependencies/Tools/PauseProgram.h
+        Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h
+        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h
+        Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h
+)
+add_executable(Encoder
+        Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
+        Dependencies/EncipherPart/EncodePart/Encoder.cpp
+        Dependencies/EncipherPart/EncodePart/Encoder.h
+        Dependencies/EncipherPart/EncodePart/SecondEncode.cpp
+        Dependencies/EncipherPart/EncodePart/SecondEncode.h
         Program/EncodeProgram/EncodeProgram.cpp
         Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.cpp Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.h
         Dependencies/Converters/CasesConverter/Converter/CasesConverter.cpp Dependencies/Converters/CasesConverter/Converter/CasesConverter.h
         Dependencies/Tools/InString.h
         Dependencies/Tools/InString.cpp
         Dependencies/Tools/PauseProgram.cpp
-        Dependencies/Tools/PauseProgram.h)
-add_executable(Decoder Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
-        Dependencies/EncipherPart/DecodePart/Decoder.cpp Dependencies/EncipherPart/DecodePart/Decoder.h
+        Dependencies/Tools/PauseProgram.h
+        Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h
+        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h
+        Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h
+)
+add_executable(Decoder
+        Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
+        Dependencies/EncipherPart/DecodePart/Decoder.cpp
+        Dependencies/EncipherPart/DecodePart/Decoder.h
         Program/DecodeProgram/DecodeProgram.cpp
         Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.cpp Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.h
         Dependencies/Converters/CasesConverter/Converter/CasesConverter.cpp Dependencies/Converters/CasesConverter/Converter/CasesConverter.h
         Dependencies/Tools/InString.h
         Dependencies/Tools/InString.cpp
         Dependencies/Tools/PauseProgram.cpp
-        Dependencies/Tools/PauseProgram.h)
+        Dependencies/Tools/PauseProgram.h
+        Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h
+        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h
+        Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.cpp
+        Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h
+        Dependencies/EncipherPart/DecodePart/SecondDecode.cpp
+        Dependencies/EncipherPart/DecodePart/SecondDecode.h
+)

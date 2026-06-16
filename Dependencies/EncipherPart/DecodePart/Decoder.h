@@ -9,7 +9,7 @@ using namespace std;
 
 class Decoder {
 public:
-    static std::string Decode(const std::string&,std::string);
+    static std::string Decode(std::string&,std::string);
 };
 
 
