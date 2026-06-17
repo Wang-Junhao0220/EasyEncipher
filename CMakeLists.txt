@@ -58,3 +58,7 @@ add_executable(Decoder
         Dependencies/EncipherPart/DecodePart/SecondDecode.cpp
         Dependencies/EncipherPart/DecodePart/SecondDecode.h
 )
+
+target_link_libraries(GetSecretKey PRIVATE -static -static-libgcc -static-libstdc++)
+target_link_libraries(Encoder PRIVATE -static -static-libgcc -static-libstdc++)
+target_link_libraries(Decoder PRIVATE -static -static-libgcc -static-libstdc++)
