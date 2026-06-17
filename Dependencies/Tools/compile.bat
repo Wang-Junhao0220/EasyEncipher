@@ -1,3 +1,4 @@
+echo [WARNING] This is deprecated. Using this may lead to compile error. (No link to newly added classes)
 echo Windows Platform
 echo Path: ~Dependencies\Tools\compile.bat
 cd ..\..

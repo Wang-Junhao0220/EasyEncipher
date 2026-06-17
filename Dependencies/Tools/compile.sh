@@ -1,3 +1,4 @@
+echo [WARNING] This is deprecated. Using this may lead to compile error. (No link to newly added classes)
 echo Linux\&macOS Platform
 echo Path: ~Dependencies/Tools/compile.sh
 cd ../..

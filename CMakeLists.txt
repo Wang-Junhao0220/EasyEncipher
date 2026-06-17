@@ -63,6 +63,7 @@ add_executable(Decoder
         Dependencies/EncipherPart/DecodePart/SecondDecode.h
 )
 
+# 为解决“找不到libgcc_s_seh-1.dll”的问题。先前采用使用compile.bat编译的方式
 target_link_libraries(GetSecretKey PRIVATE -static -static-libgcc -static-libstdc++)
 target_link_libraries(Encoder PRIVATE -static -static-libgcc -static-libstdc++)
 target_link_libraries(Decoder PRIVATE -static -static-libgcc -static-libstdc++)
