@@ -22,16 +22,13 @@ void getIndex(string Key) {
     }
 }
 string Decoder::Decode(string& password,string key) {
-    auto *secondDecoder=new SecondDecode();
-    secondDecoder->secondDecode(password,ViceTokenGenerator::returnViceToken(key));
+    SecondDecode::secondDecode(password,ViceTokenGenerator::returnViceToken(key));
     const string alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     getIndex(std::move(key));
     string ori;
-//    ori.resize(26);
     unsigned long long pass_size=password.size();
     ori.resize(pass_size);
     for(unsigned long long i=0;i<pass_size;i++) {
-        //password[i]!=' '
         if(InString::inString(alphabet,password[i])) {
             ori[i] = alphabet[pass_index[password[i] - 'A']];
         }

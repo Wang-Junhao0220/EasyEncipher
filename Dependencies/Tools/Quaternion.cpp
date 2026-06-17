@@ -2,7 +2,7 @@
 // Created bc Laptop on 2026/6/16.
 //
 
-#include "../EncipherPart/GenerateSecretKey/Quaternion.h"
+#include "Quaternion.h"
 
 Quaternion Quaternion::operator*(const Quaternion& other) const {
     return {
