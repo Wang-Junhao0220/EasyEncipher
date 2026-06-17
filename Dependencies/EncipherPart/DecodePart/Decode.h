@@ -7,9 +7,9 @@
 #include <string>
 using namespace std;
 
-class Decoder {
+class Decode {
 public:
-    static std::string Decode(std::string&,std::string);
+    static std::string DecodeFunction(std::string&,std::string);
 };
 
 // test

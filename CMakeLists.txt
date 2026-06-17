@@ -3,7 +3,8 @@ project(EasyEncipher)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(GetSecretKey Program/GetSecretKey/GetSecretKey.cpp
+add_executable(GetSecretKey
+        Program/GetSecretKey/GetSecretKey.cpp
         Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
         Dependencies/Tools/InString.h
         Dependencies/Tools/InString.cpp
@@ -20,8 +21,8 @@ add_executable(Encoder
         Program/EncodeProgram/EncodeProgram.cpp
         Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
-        Dependencies/EncipherPart/EncodePart/Encoder.cpp
-        Dependencies/EncipherPart/EncodePart/Encoder.h
+        Dependencies/EncipherPart/EncodePart/Encode.cpp
+        Dependencies/EncipherPart/EncodePart/Encode.h
         Dependencies/EncipherPart/EncodePart/SecondEncode.cpp
         Dependencies/EncipherPart/EncodePart/SecondEncode.h
         Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.cpp
@@ -43,8 +44,8 @@ add_executable(Decoder
         Program/DecodeProgram/DecodeProgram.cpp
         Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h
-        Dependencies/EncipherPart/DecodePart/Decoder.cpp
-        Dependencies/EncipherPart/DecodePart/Decoder.h
+        Dependencies/EncipherPart/DecodePart/Decode.cpp
+        Dependencies/EncipherPart/DecodePart/Decode.h
         Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.cpp
         Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.h
         Dependencies/Converters/CasesConverter/Converter/CasesConverter.cpp

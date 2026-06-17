@@ -6,9 +6,9 @@
 #define EASYENCIPHER_ENCODER_H
 #include <string>
 
-class Encoder {
+class Encode {
 public:
-    static std::string Encode(std::string,std::string);
+    static std::string EncodeFunction(std::string,std::string);
 };
 
 

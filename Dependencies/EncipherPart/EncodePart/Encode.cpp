@@ -2,14 +2,14 @@
 // Created by Laptop on 2023/11/10.
 //
 
-#include "Encoder.h"
+#include "Encode.h"
 
 #include "SecondEncode.h"
 #include "../../Tools/InString.h"
 #include "../GenerateSecretKey/ViceTokenGenerator.h"
 
 using namespace std;
-string Encoder::Encode(string ori,string key) {
+string Encode::EncodeFunction(string ori,string key) {
     const string alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     string password=ori;
     auto *secondEncoder=new SecondEncode();

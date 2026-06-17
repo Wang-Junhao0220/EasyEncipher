@@ -2,7 +2,7 @@
 // Created by Laptop on 2023/11/10.
 //
 
-#include "Decoder.h"
+#include "Decode.h"
 
 
 #include "SecondDecode.h"
@@ -13,15 +13,11 @@
 using namespace std;
 int pass_index[26];
 void getIndex(string Key) {
-    for(int i=0;i<26;i++) {
-        for(int j=0;j<26;j++) {
-            if(Key[j]==i+'A') {
-                pass_index[i]=j;
-            }
-        }
-    }
+    for(int i = 0; i < 26; i++) {
+    pass_index[Key[i] - 'A'] = i;
 }
-string Decoder::Decode(string& password,string key) {
+}
+string Decode::DecodeFunction(string& password,string key) {
     SecondDecode::secondDecode(password,ViceTokenGenerator::returnViceToken(key));
     const string alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     getIndex(std::move(key));

@@ -2,7 +2,7 @@
 // Created by Laptop on 2023/11/10.
 //
 #include <iostream>
-#include "../../Dependencies/EncipherPart/DecodePart/Decoder.h"
+#include "../../Dependencies/EncipherPart/DecodePart/Decode.h"
 #include "../../Dependencies/Converters/CasesConverter/Recorder/CasesRecorder.h"
 #include "../../Dependencies/Converters/CasesConverter/Converter/CasesConverter.h"
 #include "../../Dependencies/Tools/PauseProgram.h"
@@ -22,7 +22,7 @@ int main() {
     getline(cin, OriString);
     string D_record = CasesRecorder::returnCases(OriString);
     string H_cip = CasesConverter::All_to_high(OriString, D_record);
-    string H_C_text = Decoder::Decode(H_cip, SecretKey);
+    string H_C_text = Decode::DecodeFunction(H_cip, SecretKey);
     string C_text = CasesConverter::To_ori(H_C_text, D_record);
 //    cout<<D_record<<endl;
     cout << "Origin Text: \n" << C_text << endl;
