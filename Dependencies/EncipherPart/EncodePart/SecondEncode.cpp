@@ -9,7 +9,7 @@
 #include <bits/stdc++.h>
 
 #include "../GenerateSecretKey/EigenValueGenerator.h"
-#include "../GenerateSecretKey/Quaternion.h"
+#include "../../Tools/Quaternion.h"
 
 typedef unsigned long long ull;
 void SecondEncode::secondEncode(std::string &text, const std::string &token) {

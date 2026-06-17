@@ -6,7 +6,7 @@
 #define EASYENCIPHER_EIGENVALUEGENERATOR_H
 #include <string>
 
-#include "Quaternion.h"
+#include "../../Tools/Quaternion.h"
 
 
 class EigenValueGenerator {

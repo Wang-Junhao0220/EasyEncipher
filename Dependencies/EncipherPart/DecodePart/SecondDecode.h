@@ -9,7 +9,7 @@
 
 class SecondDecode {
 public:
-    void secondDecode(std::string& text, const std::string& token);
+    static void secondDecode(std::string& text, const std::string& token);
 };
 
 

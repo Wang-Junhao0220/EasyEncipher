@@ -3,7 +3,7 @@
 //
 
 #include "EigenValueGenerator.h"
-#include "Quaternion.h"
+#include "../../Tools/Quaternion.h"
 
 #include <cmath>
 #include <cstring>

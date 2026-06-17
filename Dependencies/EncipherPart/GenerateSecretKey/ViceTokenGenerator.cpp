@@ -7,7 +7,7 @@
 #include <bits/stdc++.h>
 
 #include "EigenValueGenerator.h"
-#include "Quaternion.h"
+#include "../../Tools/Quaternion.h"
 
 std::string ViceTokenGenerator::returnViceToken(const std::string& token) {
     std::string viceToken=token;

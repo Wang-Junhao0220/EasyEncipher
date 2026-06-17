@@ -3,7 +3,7 @@
 //
 #include <iostream>
 
-#include "../../Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h"
+#include "../../Dependencies/Tools/Quaternion.h"
 #include "../../Dependencies/EncipherPart/GenerateSecretKey/TokenGenerator.h"
 #include "../../Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h"
 #include "../../Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h"

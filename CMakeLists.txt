@@ -11,8 +11,8 @@ add_executable(GetSecretKey Program/GetSecretKey/GetSecretKey.cpp
         Dependencies/Tools/PauseProgram.h
         Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h
-        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.cpp
-        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h
+        Dependencies/Tools/Quaternion.cpp
+        Dependencies/Tools/Quaternion.h
         Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h
 )
@@ -34,8 +34,8 @@ add_executable(Encoder
         Dependencies/Tools/PauseProgram.h
         Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h
-        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.cpp
-        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h
+        Dependencies/Tools/Quaternion.cpp
+        Dependencies/Tools/Quaternion.h
         Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h
 )
@@ -55,8 +55,8 @@ add_executable(Decoder
         Dependencies/Tools/PauseProgram.h
         Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/ViceTokenGenerator.h
-        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.cpp
-        Dependencies/EncipherPart/GenerateSecretKey/Quaternion.h
+        Dependencies/Tools/Quaternion.cpp
+        Dependencies/Tools/Quaternion.h
         Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.cpp
         Dependencies/EncipherPart/GenerateSecretKey/EigenValueGenerator.h
         Dependencies/EncipherPart/DecodePart/SecondDecode.cpp

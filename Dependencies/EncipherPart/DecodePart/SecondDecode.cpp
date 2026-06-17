@@ -20,7 +20,7 @@ void secondGetIndex(string Key) {
 
 void SecondDecode::secondDecode(std::string& text, const std::string& token) {
     const string alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    secondGetIndex(std::move(token));
+    secondGetIndex(token);
     string ori=text;
     //    ori.resize(26);
     unsigned long long pass_size=text.size();
